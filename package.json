@@ -1,0 +1,21 @@
+{
+  "name": "overlayschat",
+  "version": "1.0.0",
+  "description": "Twitch Chat Overlay Application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "npx @electron/packager . \"Twitch Chat Overlay\" --platform=win32 --arch=x64 --icon=chat.ico --out=dist --overwrite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "tmi.js": "^1.8.5"
+  },
+  "devDependencies": {
+    "electron": "^41.3.0",
+    "@electron/packager": "^18.3.3"
+  }
+}

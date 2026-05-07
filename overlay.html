@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlay</title>
+    <!-- Security: CSP to prevent unauthorized scripts and connections -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self' https: wss:;">
+    <link rel="stylesheet" href="overlay.css">
+</head>
+<body>
+    <div id="drag-header" class="hidden">
+        <span>≡ Drag to Move ≡</span>
+        <button id="finish-edit-btn">Finish</button>
+    </div>
+    <div id="chat-container"></div>
+    <script src="https://cdn.jsdelivr.net/npm/tmi.js@1.8.5/tmi.min.js"></script>
+    <script src="overlay.js"></script>
+</body>
+</html>
